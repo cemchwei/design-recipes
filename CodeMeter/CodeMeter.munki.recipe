@@ -17,7 +17,7 @@
 			<key>name</key>
 			<string>%NAME%</string>
 			<key>description</key>
-			<string>The CodeMeter Runtime for Mac OS X.</string>
+			<string>The CodeMeter Drivers for macOS.</string>
 		</dict>
     </dict>
     <key>MinimumVersion</key>
@@ -30,7 +30,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>url</key>
-				<string>http://www.graphisoft.com/downloads/protection_key.html</string>
+				<string>http://dl.graphisoft.com/ftp/techsupport/downloads/Licensing/CodeMeter/6.60a/CmRuntimeUserKEXT3G_6.60.2878.501.dmg</string>
 				<key>re_pattern</key>
 				<string>(?P&lt;path&gt;/ftp/techsupport/downloads/Licensing/CodeMeter/[^/]*/CmRuntimeUserKEXT3G_[^"]*)</string>
 			</dict>

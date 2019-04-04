@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads ARCHICAD 22 Update dmg and imports into Munki.</string>
     <key>Identifier</key>
-    <string>com.github.robperc.munki.ArchiCAD22Update</string>
+    <string>com.github.cemchwei.munki.ArchiCAD22Update</string>
     <key>Input</key>
     <dict>
         <key>MUNKI_REPO_SUBDIR</key>

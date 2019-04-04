@@ -3,19 +3,19 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads ArchiCad19 dmg and imports into Munki.</string>
+    <string>Downloads ArchiCad 22 dmg and imports into Munki.</string>
     <key>Identifier</key>
-    <string>com.github.robperc.munki.ArchiCAD19</string>
+    <string>com.github.robperc.munki.ArchiCAD22</string>
     <key>Input</key>
     <dict>
         <key>MUNKI_REPO_SUBDIR</key>
         <string>apps</string>
         <key>NAME</key>
-        <string>ArchiCAD19</string>
+        <string>ArchiCAD22</string>
         <key>COUNTRY</key>
         <string>USA</string>
 		<key>URL</key>
-		<string>http://gscdn.graphisoft.com/cdn/AC/19/%COUNTRY%/AC/AC19-3003-%COUNTRY%.dmg</string>
+		<string>http://dl.graphisoft.com/AC/22/USA/ARCHICAD-22-3006-1.4.dmg</string>
     </dict>
     <key>MinimumVersion</key>
     <string>0.2.0</string>
@@ -38,7 +38,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>input_plist_path</key>
-				<string>%pathname%/ArchiCAD 19/ArchiCAD Installer.app/Contents/Info.plist</string>
+				<string>%pathname%/ArchiCAD 22/ArchiCAD Installer.app/Contents/Info.plist</string>
 			</dict>
 		</dict>
         <dict>
@@ -53,7 +53,7 @@
 				<key>pkginfo</key>
 				<dict>
 					<key>description</key>
-					<string>ArchiCAD 19 offers a streamlined workflow solution, keeping architects in the state of the creative design flow with as little disruption as possible.</string>
+					<string>ArchiCAD 22 offers a streamlined workflow solution, keeping architects in the state of the creative design flow with as little disruption as possible.</string>
 					<key>installer_type</key>
 					<string>copy_from_dmg</string>
 					<key>installs</key>
@@ -68,7 +68,7 @@
 							<key>minosversion</key>
 							<string>10.7.0</string>
 							<key>path</key>
-							<string>/Applications/GRAPHISOFT/ArchiCAD 19/ArchiCAD 19.app</string>
+							<string>/Applications/GRAPHISOFT/ArchiCAD 22/ArchiCAD 22.app</string>
 							<key>type</key>
 							<string>application</string>
 							<key>version_comparison_key</key>
@@ -85,7 +85,7 @@
 							<key>mode</key>
 							<string>go-w</string>
 							<key>source_item</key>
-							<string>ArchiCAD 19/ArchiCAD Installer.app</string>
+							<string>ArchiCAD 22/ArchiCAD Installer.app</string>
 							<key>user</key>
 							<string>root</string>
 						</dict>
@@ -103,8 +103,8 @@
 					
 					success=$?
 					
-					rm -f "/Users/$USER/Desktop/ArchiCAD 19"
-					rm -f "/Users/$USER/Desktop/BIMx for ArchiCAD 19"
+					rm -f "/Users/$USER/Desktop/ArchiCAD 22"
+					rm -f "/Users/$USER/Desktop/BIMx for ArchiCAD 22"
 					
 					exit $success
 					</string>
@@ -121,7 +121,7 @@
 
 					LWPID=`ps axww | grep loginwindow | grep -v grep | awk '{print $1}'`
 
-					JAR="/Applications/GRAPHISOFT/ArchiCAD 19/Uninstall.AC/archive.jar"
+					JAR="/Applications/GRAPHISOFT/ArchiCAD 22/Uninstall.AC/archive.jar"
 
 					launchctl bsexec $LWPID java -jar "$JAR" -W play.auto=YES -silent
 

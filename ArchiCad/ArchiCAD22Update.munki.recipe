@@ -3,15 +3,15 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads ArchiCad19 Update dmg and imports into Munki.</string>
+    <string>Downloads ARCHICAD 22 Update dmg and imports into Munki.</string>
     <key>Identifier</key>
-    <string>com.github.robperc.munki.ArchiCAD19Update</string>
+    <string>com.github.robperc.munki.ArchiCAD22Update</string>
     <key>Input</key>
     <dict>
         <key>MUNKI_REPO_SUBDIR</key>
         <string>apps</string>
         <key>NAME</key>
-        <string>ArchiCAD19Update</string>
+        <string>ArchiCAD22Update</string>
 		<key>URL</key>
 		<string>http://www.graphisoft.com</string>
     </dict>
@@ -27,7 +27,7 @@
 				<key>url</key>
 				<string>%URL%/downloads/archicad/updates/</string>
 				<key>re_pattern</key>
-				<string>(?P&lt;path&gt;/downloads/archicad/updates/AC19[^"]*)</string>
+				<string>(?P&lt;path&gt;/downloads/archicad/updates/?localization=USA&type=FULL&version=22[^"]*)</string>
 			</dict>
 		</dict>
 		<dict>
@@ -38,7 +38,7 @@
 				<key>url</key>
 				<string>%URL%%path%</string>
 				<key>re_pattern</key>
-				<string>(?P&lt;update&gt;http://dl.graphisoft.com/ftp/techsupport/downloads/ac19/ArchiCAD-19-Update-.*\.dmg)</string>
+				<string>(?P&lt;update&gt;http://dl.graphisoft.com/ftp/techsupport/downloads/ac22/ArchiCAD-22-USA-Update-.*\.dmg)</string>
 			</dict>
 		</dict>
 		<dict>
@@ -74,10 +74,10 @@
 				<dict>
 					<key>blocking_applications</key>
 					<array>
-					        <string>ArchiCAD19</string>
+					        <string>ArchiCAD22</string>
 					</array>
 					<key>description</key>
-					<string>ArchiCAD 19 offers a streamlined workflow solution, keeping architects in the state of the creative design flow with as little disruption as possible.</string>
+					<string>ArchiCAD 22 offers a streamlined workflow solution, keeping architects in the state of the creative design flow with as little disruption as possible.</string>
 					<key>installer_type</key>
 					<string>copy_from_dmg</string>
 					<key>installs</key>
@@ -92,7 +92,7 @@
 							<key>minosversion</key>
 							<string>10.9.0</string>
 							<key>path</key>
-							<string>/Applications/GRAPHISOFT/ArchiCAD 19/ArchiCAD 19.app</string>
+							<string>/Applications/GRAPHISOFT/ArchiCAD 22/ArchiCAD 22.app</string>
 							<key>type</key>
 							<string>application</string>
 							<key>version_comparison_key</key>
@@ -142,7 +142,7 @@
 					</string>
 					<key>update_for</key>
 					<array>
-						<string>ArchiCAD19</string>
+						<string>ArchiCAD22</string>
 					</array>
 				</dict>
             </dict>
